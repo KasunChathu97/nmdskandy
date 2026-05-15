@@ -17,7 +17,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <img src="/logo.png" alt="nmdskandy" className="h-8 w-auto brightness-0 invert" />
-              <span className="text-white font-bold text-lg">kandy</span>
+              <span className="text-white font-bold text-lg">nmdskandy</span>
             </div>
             <p className="text-sm leading-relaxed">Digital innovation that transforms ideas into reality. Your trusted IT partner.</p>
           </div>
