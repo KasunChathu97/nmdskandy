@@ -15,12 +15,13 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Projects', path: '/projects' },
-    { name: 'Contact', path: '/contact' },
-  ];
+const navLinks = [
+  { name: 'Home', path: '/' },
+  { name: 'About', path: '/about' },
+  { name: 'Services', path: '/services' },  // Add this line
+  { name: 'Projects', path: '/projects' },
+  { name: 'Contact', path: '/contact' },
+];
 
   const isActive = (path) => location.pathname === path;
 

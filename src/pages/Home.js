@@ -71,7 +71,7 @@ const Home = () => {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Link to="/contact" className="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700 transition">
+            <Link to="/services" className="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700 transition">
               See all 10+ services
               <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
             </Link>
