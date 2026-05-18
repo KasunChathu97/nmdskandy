@@ -25,21 +25,14 @@ const VrVideoHeroSection = () => {
     return `https://www.youtube.com/embed/${videoId}?${params.toString()}`;
   }, []);
 
-  const scrollToHero = () => {
-    if (!heroRef.current) return;
-    heroRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  };
-
   return (
     <div className="vrHeroWrapper">
       {/* Hero Section */}
       <section ref={heroRef} className="relative bg-white py-20 md:py-32 overflow-hidden">
         <div
-          className="absolute inset-0 z-0 pointer-events-none animate-reveal-ltr"
+          className="heroBgLayer absolute inset-0 z-0 pointer-events-none animate-reveal-ltr"
           style={{
             backgroundImage: `url(${heroBg})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
           }}
         />
         <div className="absolute inset-0 z-0 pointer-events-none bg-gradient-to-r from-white/90 via-white/60 to-transparent" />

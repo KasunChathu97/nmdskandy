@@ -67,7 +67,7 @@ const Contact = () => {
               <div className="space-y-3 text-gray-700">
                 <p className="flex items-center gap-3">📞 <a href="tel:+94711378550" className="hover:text-primary-600">+94 71-1378550</a></p>
                 <p className="flex items-center gap-3">✉️ <a href="mailto:info@nmdskandy.lk" className="hover:text-primary-600">info@nmdskandy.lk</a></p>
-                <p className="flex items-center gap-3">📍 No 126, D.S Senanayake Street, Kandy, Sri Lanka</p>
+                <p className="flex items-center gap-3">📍 No 129, D.S Senanayake Street, Kandy, Sri Lanka</p>
               </div>
             </div>
             <div className="bg-gray-50 rounded-2xl p-6">
@@ -79,7 +79,7 @@ const Contact = () => {
                   style={{ border: 0 }}
                   loading="lazy"
                   allowFullScreen
-                  src="https://www.google.com/maps?q=No%20126,%20D.S%20Senanayake%20Street,%20Kandy,%20Sri%20Lanka&output=embed"
+                  src="https://www.google.com/maps?q=No%20129,%20D.S%20Senanayake%20Street,%20Kandy,%20Sri%20Lanka&output=embed"
                 ></iframe>
               </div>
               <a

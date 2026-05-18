@@ -2,6 +2,27 @@
   width: 100%;
 }
 
+/* Hero background layer (used in VrVideoHeroSection) */
+.heroBgLayer {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* Mobile: shift focus so the main subject stays in-frame */
+@media (max-width: 640px) {
+  .heroBgLayer {
+    background-position: 65% 50%;
+  }
+}
+
+/* Very small screens: shift a bit more */
+@media (max-width: 380px) {
+  .heroBgLayer {
+    background-position: 72% 50%;
+  }
+}
+
 .vrSection {
   width: 100%;
   margin-top: 3.7rem;
