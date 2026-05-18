@@ -197,7 +197,7 @@ const Services = () => {
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="fade-up opacity-0">
-              <h2 className="text-3xl font-bold text-dark mb-4">Why Choose nmdskandy?</h2>
+              <h2 className="text-3xl font-bold text-dark mb-4">Why Choose Us?</h2>
               <div className="w-16 h-1 bg-primary-600 mb-6 rounded-full"></div>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 We combine technical excellence with creative innovation to deliver solutions that 

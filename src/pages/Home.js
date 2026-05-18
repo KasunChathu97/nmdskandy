@@ -1,11 +1,10 @@
 // src/pages/Home.js
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { services } from '../utils/servicesData';
+import VrVideoHeroSection from '../components/VrVideoHeroSection';
 
 const Home = () => {
-  const sectionRef = useRef(null);
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -28,31 +27,7 @@ const Home = () => {
 
   return (
     <div className="pt-20">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-50 via-white to-primary-100 py-20 md:py-32 overflow-hidden">
-        <div className="container mx-auto px-6 lg:px-12 relative z-10">
-          <div className="max-w-3xl mx-auto text-center fade-up opacity-0">
-            <div className="inline-block bg-primary-100 text-primary-700 rounded-full px-4 py-1 text-sm font-semibold mb-6">
-              Digital Innovation Partner
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-dark mb-6 leading-tight">
-              Transform Your Business with <span className="text-primary-600">Future-Ready</span> Tech
-            </h1>
-            <p className="text-lg md:text-xl text-gray-600 mb-8">
-              nmdskandy delivers cutting-edge IT solutions — from web platforms and VR experiences to smart hotel integrations.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact" className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-xl font-semibold transition shadow-lg hover:shadow-xl">
-                Start Your Project
-              </Link>
-              <Link to="/projects" className="border border-gray-300 hover:border-primary-500 text-gray-700 hover:text-primary-600 px-8 py-3 rounded-xl font-semibold transition">
-                View Our Work
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div className="absolute top-0 right-0 w-72 h-72 bg-primary-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
-      </section>
+      <VrVideoHeroSection />
 
       {/* Services Highlights */}
       <section className="py-20 bg-white">

@@ -31,7 +31,7 @@ const navLinks = [
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
           <img src="/logo.png" alt="nmdskandy" className="h-10 w-auto" />
-          <span className="text-xl font-bold bg-gradient-to-r from-primary-700 to-primary-500 bg-clip-text text-transparent">nmdskandy</span>
+          <span className="text-xl font-bold bg-gradient-to-r from-primary-700 to-primary-500 bg-clip-text text-transparent">NMDS</span>
         </Link>
 
         {/* Desktop Menu */}

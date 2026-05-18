@@ -65,24 +65,30 @@ const Contact = () => {
             <div className="bg-gray-50 rounded-2xl p-6">
               <h3 className="text-xl font-bold text-dark mb-4">Contact Info</h3>
               <div className="space-y-3 text-gray-700">
-                <p className="flex items-center gap-3">📞 <a href="tel:+1234567890" className="hover:text-primary-600">+1 (234) 567-890</a></p>
-                <p className="flex items-center gap-3">✉️ <a href="mailto:hello@nmdskandy.com" className="hover:text-primary-600">hello@nmdskandy.com</a></p>
-                <p className="flex items-center gap-3">📍 123 Digital Avenue, Suite 400, San Francisco, CA 94107</p>
+                <p className="flex items-center gap-3">📞 <a href="tel:+94711378550" className="hover:text-primary-600">+94 71-1378550</a></p>
+                <p className="flex items-center gap-3">✉️ <a href="mailto:info@nmdskandy.lk" className="hover:text-primary-600">info@nmdskandy.lk</a></p>
+                <p className="flex items-center gap-3">📍 No 126, D.S Senanayake Street, Kandy, Sri Lanka</p>
               </div>
             </div>
             <div className="bg-gray-50 rounded-2xl p-6">
               <h3 className="text-xl font-bold text-dark mb-4">Find Us</h3>
               <div className="w-full h-64 bg-gray-300 rounded-xl overflow-hidden">
-                {/* Google Maps Placeholder - replace with actual embed */}
                 <iframe
                   title="Office location"
                   className="w-full h-full"
                   style={{ border: 0 }}
                   loading="lazy"
                   allowFullScreen
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0193953260545!2d-122.419415584681!3d37.774929779759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1650000000000!5m2!1sen!2sus"
+                  src="https://www.google.com/maps?q=No%20126,%20D.S%20Senanayake%20Street,%20Kandy,%20Sri%20Lanka&output=embed"
                 ></iframe>
               </div>
+              <a
+                href="https://maps.app.goo.gl/mq433AtrQVRPVSoTA?g_st=aw"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex mt-3 text-primary-600 font-semibold hover:text-primary-700 transition"
+              >
+              </a>
             </div>
           </div>
         </div>

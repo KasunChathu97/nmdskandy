@@ -17,7 +17,7 @@ const About = () => {
       <div className="container mx-auto px-6 lg:px-12">
         {/* Company Background */}
         <div className="max-w-4xl mx-auto text-center mb-16 fade-up opacity-0">
-          <h1 className="text-4xl md:text-5xl font-bold text-dark mb-6">About nmdskandy</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-dark mb-6">About</h1>
           <div className="w-24 h-1 bg-primary-500 mx-auto mb-8"></div>
           <p className="text-gray-700 text-lg leading-relaxed">
             Founded with a vision to bridge creativity and technology, nmdskandy has become a trusted IT and digital services partner for businesses worldwide. 

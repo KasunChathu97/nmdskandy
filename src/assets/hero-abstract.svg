@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="14%" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="45%" stop-color="#2b1b4f" stop-opacity="0.35"/>
+      <stop offset="72%" stop-color="#5b2b2a" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#4a0f2a" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <radialGradient id="orbPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#2b1b4f" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#2b1b4f" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="orbWarm" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#b45309" stop-opacity="0.50"/>
+      <stop offset="55%" stop-color="#7f1d1d" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#7f1d1d" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="orbRed" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#4a0f2a" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#4a0f2a" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="blur40" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+
+    <filter id="blur18" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+
+    <linearGradient id="lineLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="lineViolet" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#7c3aed" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#ef4444" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base wash: left light/transparent to right deep tones -->
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <!-- Soft orbs -->
+  <g filter="url(#blur40)">
+    <circle cx="1180" cy="250" r="210" fill="url(#orbPurple)"/>
+    <circle cx="1320" cy="640" r="260" fill="url(#orbRed)"/>
+    <circle cx="980" cy="760" r="240" fill="url(#orbWarm)"/>
+  </g>
+
+  <!-- Flowing curved lines -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#blur18)">
+    <path d="M120 560 C 420 420, 620 640, 910 520 C 1110 438, 1285 350, 1500 420" stroke="url(#lineLight)" stroke-width="6"/>
+    <path d="M260 300 C 520 210, 740 340, 980 270 C 1170 212, 1330 120, 1515 200" stroke="url(#lineViolet)" stroke-width="5"/>
+    <path d="M140 740 C 420 680, 620 820, 900 740 C 1080 690, 1240 590, 1490 650" stroke="url(#lineLight)" stroke-width="4"/>
+  </g>
+
+  <!-- Small red accent dot -->
+  <circle cx="1060" cy="462" r="6" fill="#e11d48"/>
+</svg>

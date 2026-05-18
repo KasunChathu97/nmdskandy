@@ -16,8 +16,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <img src="/logo.png" alt="nmdskandy" className="h-8 w-auto brightness-0 invert" />
-              <span className="text-white font-bold text-lg">nmdskandy</span>
+              <img src="/logo.png" alt="NM Digital solutions Kandy" className="h-10 w-auto" />
+              <span className="text-white font-bold text-lg">NM Digital solutions Kandy</span>
             </div>
             <p className="text-sm leading-relaxed">Digital innovation that transforms ideas into reality. Your trusted IT partner.</p>
           </div>
