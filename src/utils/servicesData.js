@@ -12,11 +12,57 @@ export const services = [
   { id: 10, title: 'Project Reports', icon: '📊', description: 'Data-driven reporting & insights.' },
 ];
 
+// projectsData fields
+// - imageSrc: recommended way to set the card image.
+//   Put your image inside `public/` and set `imageSrc` like: "/MyProject.png".
+// - visitUrl: website URL to open from the "Visit" button.
+// - imageKey: optional fallback (used only when imageSrc is not provided).
 export const projectsData = [
-  { id: 1, name: 'Luxury Hotel Suite VR', description: '360° virtual tour for 5-star resort', client: 'Grand Mirage' },
-  { id: 2, name: 'Booking.com Integration Hub', description: 'Seamless channel manager for hotels', client: 'StayWise' },
-  { id: 3, name: 'Retail POS + Inventory', description: 'Cloud-based POS for 50+ stores', client: 'Urban Mart' },
-  { id: 4, name: 'Travel Mobile App', description: 'Trip planner with GetYourGuide API', client: 'Wanderly' },
+  {
+    id: 1,
+    name: 'Jucon Travels Kandy',
+    description: 'Jucon Travels is ready to take you safely, smoothly, and with a touch of Sri Lankan warmth.',
+    client: 'Jucon Team',
+    imageKey: 'hero',
+    imageSrc: '/Jucontravels.png',
+    visitUrl: 'https://www.jucontravels.com/',
+  },
+  {
+    id: 2,
+    name: 'Booking.com Integration Hub',
+    description: 'Seamless channel manager and booking sync for hotels',
+    client: 'StayWise',
+    imageKey: 'abstract',
+    imageSrc: '',
+    visitUrl: '',
+  },
+  {
+    id: 3,
+    name: 'Retail POS + Inventory',
+    description: 'Cloud POS with inventory, reporting, and multi-store support',
+    client: 'Urban Mart',
+    imageKey: 'abstract',
+    imageSrc: '',
+    visitUrl: '',
+  },
+  {
+    id: 4,
+    name: 'Travel Mobile App',
+    description: 'Trip planning experience with GetYourGuide integration',
+    client: 'Wanderly',
+    imageKey: 'jucontra',
+    imageSrc: '/Jucontravels.png',
+    visitUrl: '',
+  },
+    {
+    id: 3,
+    name: 'NMDS Kandy',
+    description: 'Cloud POS with inventory, reporting, and multi-store support',
+    client: 'Urban Mart',
+    imageKey: 'abstract',
+    imageSrc: '',
+    visitUrl: '',
+  },
 ];
 
 export const companiesAdvised = [
