@@ -55,7 +55,7 @@ export const projectsData = [
     visitUrl: '',
   },
     {
-    id: 3,
+    id: 5,
     name: 'NMDS Kandy',
     description: 'Cloud POS with inventory, reporting, and multi-store support',
     client: 'Urban Mart',

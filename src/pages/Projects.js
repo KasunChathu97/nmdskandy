@@ -53,7 +53,7 @@ const Projects = () => {
           {projectsData.map((project, idx) => (
             <article
               key={project.id}
-              className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 hover-lift fade-up opacity-0 flex flex-col"
+              className="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 hover-lift-sm fade-up opacity-0 flex flex-col"
               style={{ animationDelay: `${idx * 0.08}s` }}
             >
               {/* Media */}

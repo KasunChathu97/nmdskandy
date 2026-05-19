@@ -34,6 +34,15 @@
     box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.1);
   }
 
+  .hover-lift-sm {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .hover-lift-sm:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 18px -14px rgba(0, 0, 0, 0.14);
+  }
+
   .animate-reveal-ltr {
     animation: revealLtr 1.1s ease-out both;
     will-change: clip-path, opacity, transform;
