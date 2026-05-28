@@ -65,7 +65,21 @@ export const projectsData = [
   },
 ];
 
-export const companiesAdvised = [
-  'Accor Hotels', 'Marriott International', 'Tripadvisor Inc', 'Booking Holdings', 
-  'Airbnb', 'Agoda', 'GetYourGuide', 'Hyatt Hotels'
+// Partner logos displayed in "Projects" under "Companies We Advise & Partner With".
+// Files live in `public/Partner/` and are referenced via /Partner/<file>.
+export const partnerLogos = [
+  { name: 'US', file: 'US.jpeg' },
+  { name: 'Tycoon', file: 'Tycoon.jpeg' },
+  { name: 'Sho Cars Japan', file: 'shocarsjapan.jpeg' },
+  { name: 'Raknaisuru', file: 'Raknaisuru.jpeg' },
+  { name: 'Kandy Waffle Cones', file: 'Kandywafflecones.jpeg' },
+  { name: 'Jucan Travels', file: 'Jucantravels.jpeg' },
+  { name: 'IFB', file: 'IFB.jpeg' },
+  { name: 'Green Chaya Spa', file: 'GreenChayaSpa.jpeg' },
+  { name: 'GJ', file: 'GJ.jpeg' },
+  { name: 'Environment', file: 'Environment.jpeg' },
+  { name: "Dinesh's", file: "Dinesh's.jpeg" },
+  { name: 'Delma Hotel', file: 'DelmaHotel.jpeg' },
+  { name: 'Brookside', file: 'Brookside.jpeg' },
+  { name: 'Adhya Salon', file: 'Adhyasalon.jpeg' },
 ];

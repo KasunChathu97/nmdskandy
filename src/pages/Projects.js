@@ -1,6 +1,6 @@
 // src/pages/Projects.js
-import React, { useEffect } from 'react';
-import { projectsData, companiesAdvised } from '../utils/servicesData';
+import React, { useEffect, useMemo } from 'react';
+import { projectsData, partnerLogos } from '../utils/servicesData';
 
 import heroImg from '../assets/hero.jpg';
 import abstractImg from '../assets/hero-abstract.svg';
@@ -38,6 +38,21 @@ const Projects = () => {
     } catch {
       return '';
     }
+  };
+
+  const uniquePartnerLogos = useMemo(() => {
+    const seen = new Set();
+    return (partnerLogos || []).filter((p) => {
+      const key = String(p?.file || '').trim().toLowerCase();
+      if (!key || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }, []);
+
+  const getPartnerLogoSrc = (fileName) => {
+    if (!fileName) return '';
+    return `/Partner/${encodeURIComponent(fileName)}`;
   };
 
   return (
@@ -108,8 +123,18 @@ const Projects = () => {
           <div className="bg-gray-50 rounded-2xl p-8 text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-dark mb-8">Companies We Advise & Partner With</h2>
             <div className="flex flex-wrap justify-center gap-6">
-              {companiesAdvised.map((company, i) => (
-                <span key={i} className="bg-white px-5 py-2 rounded-full shadow-sm text-gray-700 font-medium border border-gray-200">{company}</span>
+              {uniquePartnerLogos.map((partner) => (
+                <div
+                  key={partner.file}
+                  className="bg-white p-4 rounded-2xl shadow-sm border border-gray-200 flex items-center justify-center"
+                >
+                  <img
+                    src={getPartnerLogoSrc(partner.file)}
+                    alt={partner.name}
+                    loading="lazy"
+                    className="h-12 md:h-14 w-auto object-contain"
+                  />
+                </div>
               ))}
             </div>
           </div>
